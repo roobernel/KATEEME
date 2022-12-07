@@ -1,113 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KTM - CONTACTO</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-</head>
+  </head>
 
-
-<body>
-<header>
-        <div class="barraNav">
-        <h1><a href="index.html"></a>KTM</h1>
+  <body class="bodyContact">
+    <header>
+      <div class="barraNav">
+        <div>
+          <a href="index.html"><h1>KTM</h1></a>
+        </div>
         <nav class="nav">
-            <div class="burga"> menu</div>
-            <div class="contenido">
-                <a href="index.html">Inicio</a>
-                <a href="modelos.html">Modelos</a>
-                <a href="contact.html">Contacto</a>
-                <a href="news.html">Noticias</a>
-                <a href="ebikes.html">E-Bikes</a>
-                <a href="powerwear.html">Powerwear</a>
-            </div>
+          <div class="burga">menu</div>
+          <div class="contenido">
+            <a href="index.html">Inicio</a>
+            <a href="modelos.html">Modelos</a>
+            <a href="news.html">Noticias</a>
+            <a href="ebikes.html">E-Bikes</a>
+            <a href="powerwear.html">Powerwear</a>
+            <a class="select" href="contact.html">Contacto</a>
+          </div>
         </nav>
-        </div>
-        </div>
+      </div>
+      <div >
+      <img class="banner"
+          src="img/concesionario.jpg"
+          alt="concesionario"/>
+      </div>
+      <div class="titulo">
+        <h2>KTM - Contacto</h2>
+        <p>Contacta con nuestro equipo</p>
+      </div>
     </header>
 
-
     <main class="mainContacto">
-        <h2 class="titForm">Contactate con nuestro equipo</h2> 
-        
-        <div class="formulario">
-            <form method="post" action="#" class="form">
-            <div class="fieldForm">
-                <input class="formfield" type="text" placeholder="Nombre/s y Apellido/s" required>
-            </div>
-            <div class="fieldForm">
-                <input class="formfield" type="email" placeholder="Correo Electronico" required>
-            </div>
-            <div class="fieldForm">
-            <input class="formfield" type="number" placeholder="Numero de telefono">
-            </div>
-            <div class="fieldForm">
-                <label for="sel"></label>
-                <select name="sel" class="formfield" id="sel" >
-                    <option value="1">Ciudad Autonoma de Buenos Aires</option>
-                    <option value="2">Cordoba</option>
-                    <option value="3">Santa Fe</option>
-                </select>
-            </div>
-            <div class="fieldForm">
-            <textarea class="formfield" name="comments" rows="8" placeholder="Mensaje" required ></textarea>
-            </div>
-            <div class="fieldForm">
-                <input class="btn" type="submit" value="ENVIAR">
-            </div>
-            </form>
-        </div>
+      <div class="formulario">
+        <form method="post" action="#" class="form">
+          <div class="fieldForm">
+            <input class="formfield" type="text" placeholder="Nombre/s y Apellido/s" required/>
+          </div>
+          <div class="fieldForm">
+            <input
+              class="formfield"
+              type="email"
+              placeholder="Correo Electronico"
+              required/>
+          </div>
+          <div class="fieldForm">
+            <input
+              class="formfield"
+              type="number"
+              placeholder="Numero de telefono"
+            />
+          </div>
+          <div class="fieldForm">
+            <label for="sel"></label>
+            <select name="sel" class="formfield" id="sel">
+              <option value="0">Seleccione su ciudad</option>
+              <option value="1">Ciudad Autonoma de Buenos Aires</option>
+              <option value="2">Cordoba</option>
+              <option value="3">Santa Fe</option>
+            </select>
+          </div>
+
+          <div class="fieldForm">
+            <textarea
+              class="formfield"
+              name="comments"
+              rows="8"
+              placeholder="Mensaje"
+              required
+            ></textarea>
+          </div>
+          <div class="fieldForm checkbox">
+            <input
+              type="checkbox"
+              id="intencion1"
+              name="intencion1"
+              value="productos"/>
+            <label for="intencion1">
+              Me interesa las novedades sobre productos y promociones
+              KTM.</label
+            ><br />
+            <input
+              type="checkbox"
+              id="intencion2"
+              name="intencion2"
+              value="noticias"
+            />
+            <label for="intencion2">
+              Me interesan las novedades sobre KTM Racing.</label
+            ><br />
+            <input
+              type="checkbox"
+              id="intencion3"
+              name="intencion3"
+              value="argentina"
+            />
+            <label for="intencion3">
+              Me interesan las novedades sobre KTM Argentina
+            </label>
+          </div>
+          <div class="fieldForm checkbox">
+            <p>Tenes alguna imagen o archivo que adjuntar al mensaje?</p>
+            <label for="myfile">Adjuntar archivo:</label>
+            <input type="file" id="myfile" name="myfile" /><br /><br />
+          </div>
+
+          <div class="fieldForm">
+            <input class="btn" type="submit" value="ENVIAR" />
+          </div>
+        </form>
+      </div>
     </main>
 
-
-
     <footer>
-        <div>
-            <div class="company">
-                <h2 >Compania</h2>
-                <ul>
-                    <li>Contacto</li>
-                    <li>Valores de Marca</li>
-                    <li>Carrera</li>
-                </ul>
-            </div>
-            <div class="world">
-                <h2>Mundo KTM</h2>
-                    <ul>
-                        <li>Noticias</li>
-                        <li>Carreras</li>
-                        <li>Historias</li>
-                    </ul>
-            </div>       
-            <div class="service">
-            <h2 >Service</h2>
-                <ul>
-                    <li>Garantia</li>
-                    <li>Manuales</li>
-                    <li>Seguridad</li>
-                </ul>
-            </div>   
-            <div class="legal">
-                <h2>Legal</h2>
-                <ul>
-                    <li>Impresion</li>
-                    <li>Avisos legales</li>
-                </ul>
-            </div> 
-            <div class="connect">
-                <h2>Connect</h2>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Youtube</li>
-                </ul>
-            </div>
+      <div>
+        <div class="company">
+          <h2>Compania</h2>
+          <ul>
+            <li>Contacto</li>
+            <li>Valores de Marca</li>
+            <li>Carrera</li>
+          </ul>
         </div>
+        <div class="world">
+          <h2>Mundo KTM</h2>
+          <ul>
+            <li>Noticias</li>
+            <li>Carreras</li>
+            <li>Historias</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h2>Service</h2>
+          <ul>
+            <li>Garantia</li>
+            <li>Manuales</li>
+            <li>Seguridad</li>
+          </ul>
+        </div>
+        <div class="legal">
+          <h2>Legal</h2>
+          <ul>
+            <li>Impresion</li>
+            <li>Avisos legales</li>
+          </ul>
+        </div>
+        <div class="connect">
+          <h2>Connect</h2>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

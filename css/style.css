@@ -12,6 +12,7 @@ body{
 .banner{
     width: 100%;
 }
+
 header{
     height: auto ;
     width: 100%;
@@ -22,7 +23,6 @@ header{
 .titulo{
     align-self: center;
     color: #fff;
-    float: center;
     position: absolute;
     font-weight: bold;
 }
@@ -31,13 +31,17 @@ header{
     margin: auto;
     position: absolute;
 }
- .burga{
-        overflow: hidden;
-        text-indent: -400px;
+.burga{
+    overflow: hidden;
+    text-indent: -400px;
     }
+.select{
+    background-color: #f60;
+    padding: 3px;
+}
 @media screen and (min-width:1200px){ 
     .titulo{
-    font-size: 50px;
+        font-size: 50px;
     }
     .barraNav{
         width: 1000px ;
@@ -67,7 +71,6 @@ header{
     header nav div a{
         text-decoration: none;
         color: white;
-        background-color: 0%;
         font-size: medium;
         text-transform: uppercase;   
         display: inline;
@@ -78,13 +81,13 @@ header{
 }
 @media screen and (min-width:701px) and (max-width:1199px){
     header{
-            height: auto ;
-            width: 100%;
-        }
+        height: auto ;
+        width: 100%;
+    }
     .barraNav{
         width: 700px ;
     }
-        .titulo{
+    .titulo{
     font-size: 30px;
     }
 
@@ -126,17 +129,16 @@ header{
 
 @media screen and (max-width:700px){
     header{
-        height: 5vh ;
+        height: auto ;
         width: 100%;
     }
     .barraNav{
-        display: block;
+        display: inline-block;
         margin: auto;
         width: 260px ;
     }
     .titulo{
-    font-size: px;
-    margin-top: 40%;
+    font-size: 16px;
     }
     h1{
         background-image: url(../img/logo.png);
@@ -150,7 +152,6 @@ header{
     }
     .nav{
         position: relative;
-        display: inline-block;
         float: right;
     }
     .burga{
@@ -181,9 +182,8 @@ header{
     }
 
 
-   .nav:hover .contenido{
+    .nav:hover .contenido{
         display: block;
-
     }
     .contenido a:hover{
         color: #000000;
@@ -203,32 +203,33 @@ header{
 @media screen and (min-width:1200px){
     main{
     width: 100%;
-    height: 820px;
-    display: flex;   
+    height: 830px;
+    display: flex;
+    margin-bottom: 10px;   
     }
     .grid{
         display: grid;
-        grid-template-columns: 25% 25% 25% 25% ;
+        grid-template-columns: 300px 300px 300px 300px ;
         grid-template-rows: 300px 500px ;
         grid-template-areas: 
         "model model model model"
         "contact news ebikes wear";
         margin: auto;
         margin-top: 1%;
-        margin-bottom: 1%;
+        margin-bottom: 2%;
         
     }
-    .grid h3{
+    .grid a{
         margin: 5px;
     }
-    main section h3 a{
+    main section a h3{
         font-size: 35px;
     }
 }
 @media screen and (min-width:701px) and (max-width:1199px){
-     main{
+    main{
     width: 100%;
-    height: 1020px;
+    height: 1030px;
     display: flex;   
     }
     .grid{
@@ -243,20 +244,20 @@ header{
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .grid h3{
+    .grid a{
         margin: 5px;
     }
-    main section h3 a{
+    main section a h3{
         font-size: 25px;
     }
 }
 @media screen  and (max-width:700px){
     main{
         width: auto;
-        height: auto;
+        height: 720px;
         display: flex;
-        margin-top: 50%;
-        position: relative;
+        margin-top: 3px;
+
     }
     .grid{
         display: grid;
@@ -269,27 +270,25 @@ header{
         "ebikes"
         "wear";
         margin: auto;
+
     }
-    .grid h3{
+    .grid a{
         margin: 3px;
+
     }
     main section h3 a{
-        font-size: 15px;
+        font-size: 20px;
     }
-}
-main section h3 a:hover {
-text-shadow: rgb(0, 0, 0) 2px 2px;
-color: #f60;
 }
 
 .model{
     grid-area: model;
     background-image: url(../img/modelos.jpeg);
-    background-size: contain;
+    background-size: cover;
 }
 .contact{
     grid-area: contact;
-    background-image: url(../img/concesionario.webp);
+    background-image: url(../img/concesionario.jpg);
     background-size: cover;
 }
 .news{
@@ -307,70 +306,106 @@ color: #f60;
     background-image: url(../img/powerwear.jpeg);
     background-size: cover;
 }
-h3{
-    display: flex;
-}
-main section h3 a{
+main section  a{
+    display: flex;   
     text-decoration: none;
+}
+main section a h3{
+    
     background: none;
-    color: white;
-    margin: auto;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
     text-transform: uppercase;
-    width: 250px;
-    height: 39px;
-    text-align: center;
-    text-shadow: black 2px 2px;
+    font-weight:900;
+    width:auto;
+    height: inherit;
+    margin: auto;
+}
+main section a h3:hover {
+color: rgba(2, 1, 0, 0);
+font-size: 90px;
+}
+.grid a:hover .h3{
+    overflow: hidden;
+    color: #fffffff8;
+    height: auto;
 }
 /* Contenido Modelos */
+
 @media screen and (min-width:1200px){
+    .mainModelos{
+        height: 815px;
+    }
+
     .contenidoModelos{
         display: grid;
-        grid-template-columns: 1200px;
-        grid-template-rows: 500px 500px 500px 500px 500px;
+        grid-template-columns: 200px 200px 200px 200px 200px 200px;
+        grid-template-rows: 500px 300px;
         grid-template-areas: 
-        "enduro"
-        "eride"
-        "adventure"
-        "naked"
-        "supersport";
+        "enduro enduro enduro supersport supersport supersport"
+        "eride eride adventure adventure naked naked";
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .contenidoModelos a{
+        margin: 10px;
+    }
 }
 @media screen and (min-width:701px) and (max-width:1199px){
+    .mainModelos{
+        height: 930px;
+    }
     .contenidoModelos{
         display: grid;
-        grid-template-columns: 700px;
-        grid-template-rows: 500px 500px 500px 500px 500px;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 300px 300px 300px;
         grid-template-areas: 
-        "enduro"
-        "eride"
-        "adventure"
-        "naked"
-        "supersport";
+        "naked enduro"
+        "supersport supersport"
+        "eride adventure";
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .contenidoModelos a{
+        margin: 5px;
     }
 }
 
 @media screen and (max-width:700px){
+    .mainModelos{
+        height:1280px;
+    }
     .contenidoModelos{
         display: grid;
-        grid-template-columns: 260px;
-        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-columns:320px;
+        grid-template-rows: 250px 250px 250px 250px 250px;
         grid-template-areas: 
+        "supersport"
         "enduro"
         "eride"
         "adventure"
         "naked"
-        "supersport";
+        ;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .contenidoModelos a{
+        margin: 3px;
+        overflow: hidden;
+    }
 }
+
+.contenidoModelos a{
+    overflow: hidden;
+}
+.contenidoModelos a h3:hover{
+    font-size: 70px;
+    color: #fff;
+}
+
 
 .enduro{
     grid-area: enduro;
@@ -397,9 +432,15 @@ main section h3 a{
     background-image: url(../img/Modelos/supersport.jpeg);
     background-size: cover;
 }
+
+.contenidoModelos a:hover{
+    background: #1f1e1e;
+}
+.contenidoModelos a h3:hover{
+    color: #f60;
+}
 /* Contenido Contact */
-@media screen and (min-width:1200px){
-    .mainContacto{
+   .mainContacto{
         background-image: url(../img/contact/form.jpeg);
         background-size: cover;
         color: #fff;
@@ -409,27 +450,26 @@ main section h3 a{
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 1000px;
-        height: 1000px;
         margin: auto;
-        padding-top: 5%;
     }
-    .titForm{
-        margin: 0;
-        font-weight: 300;
-        font-size: 30px;
-        text-shadow: black 2px 2px;
-        display: inline;
-        background: none;
-        text-transform: uppercase;
-        font-weight: bold;
+
+.formulario{
+            border-top: 3px solid #f60  ;
+        border-bottom: 3px solid #f60;
+        background: #302e2e62;
+}
+
+@media screen and (min-width:1200px){
+    .mainContacto{
+        width: 100%;
+        height: 900px;
+        margin: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
     .formulario{
-        margin-top: 20%;
+        margin-top: 5%;
         padding-top: 5%;
-        border-top: 3px solid #f60  ;
-        border-bottom: 3px solid #f60;
-        background: rgba(255, 255, 255, 0.192);
     }   
     .form{
         margin: auto;
@@ -441,6 +481,15 @@ main section h3 a{
         margin-bottom:10px;
         width:100%;
         background: none;
+        display: flex;
+    }
+    .checkbox{
+        font-weight: 500;
+        font-size: 18px;
+        display: inline;
+    }
+    #sel{
+        color: #4b4a4a;
     }
     .formfield {
         color:#000000; 
@@ -463,42 +512,21 @@ main section h3 a{
         cursor:pointer;
         text-decoration:none;
         font-weight:bold;
-        margin-left: 40%;
+        margin: auto;
     }
 
 }
 @media screen and (min-width:701px) and (max-width:1199px){
 .mainContacto{
-        background-image: url(../img/contact/form.jpeg);
-        background-size: cover;
-        color: #fff;
-        font-weight: 400;
-        font-size: 16px;
-        font-family: 'Lato', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         width: 100%;
         height: 900px;
         margin: auto;
         padding-top: 5%;
     }
-    .titForm{
-        margin: 0;
-        font-weight: 300;
-        font-size: 24px;
-        text-shadow: black 2px 2px;
-        display: inline;
-        background: none;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
     .formulario{
-        margin-top: 20%;
+        margin-top: 10%;
         padding-top: 5%;
-        border-top: 3px solid #f60  ;
-        border-bottom: 3px solid #f60;
-        background: rgba(255, 255, 255, 0.192);
+
     }   
     .form{
         margin: auto;
@@ -536,25 +564,19 @@ main section h3 a{
     }
 }
 @media screen  and (max-width:700px){
-   .mainContacto{
-        background-image: url(../img/contact/form.jpeg);
-        background-size: cover;
-        color: #fff;
-        font-weight: 400;
-        font-size: 16px;
-        font-family: 'Lato', Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .mainContacto{
         width: 100%;
         height: 700px;
         margin: auto;
         padding-top: 5%;
+        margin-top: 3%;
+        margin-bottom: 10px;
     }
+
     .titForm{
         margin: 0;
         font-weight: 100;
-        font-size: 14px;
+        font-size: 16px;
         text-shadow: black 2px 2px;
         display: inline;
         background: none;
@@ -562,11 +584,9 @@ main section h3 a{
         font-weight: bold;
     }
     .formulario{
-        margin-top: 20%;
+        margin-top: 1px;
         padding-top: 5%;
-        border-top: 3px solid #f60  ;
-        border-bottom: 3px solid #f60;
-        background: rgba(255, 255, 255, 0.192);
+        display: inline-block;
     }   
     .form{
         margin: auto;
@@ -600,7 +620,7 @@ main section h3 a{
         cursor:pointer;
         text-decoration:none;
         font-weight:bold;
-        margin-left: 30%;
+        margin: auto;
     } 
 }
 #sel{
@@ -611,6 +631,114 @@ main section h3 a{
     width: auto;
     height: auto;
 }
+
+/* Contenido news */
+.contenidoNews{
+    display: grid;
+}
+.not1{
+    grid-area: not1;
+}
+.not2{
+    grid-area: not2;
+}
+.not3{
+    grid-area: not3;
+}
+.not4{
+    grid-area: not4;
+}
+.not5{
+    grid-area: not5;
+}
+.not6{
+    grid-area: not6;
+}
+.contenidoNews div article h3:hover{
+    color: #f60;
+}
+
+
+
+@media screen and (min-width:1200px){
+    .mainNews{
+        height: 1400px;
+        display: flex;
+        margin-top: 1%;
+    }
+    .contenidoNews div img{
+        width: 390px;
+    }
+    .contenidoNews{
+            display: grid;
+            grid-template-columns:400px 400px 400px;
+            grid-template-rows: 700px 700px;
+            grid-template-areas: 
+            "not3 not1 not2 "
+            "not4 not5 not6";
+            margin: auto;
+        }
+}
+@media screen and (min-width:701px) and (max-width:1199px){
+    .mainNews{
+    height:1850px;
+    display: flex;;
+    }
+    .contenidoNews div img{
+        width: 340px;
+    }
+    .contenidoNews{
+            display: grid;
+            grid-template-columns: 350px 350px ;
+            grid-template-rows: 600px 600px 600px;
+            grid-template-areas: 
+            "not3 not1"
+            "not2 not4"
+            "not5 not6";
+            margin: auto;
+        }
+}
+
+@media screen and (max-width:700px){
+    .mainNews{
+    height: 3630px;
+    display: flex;
+    margin-top: 5%;
+    }
+    .contenidoNews div img{
+    width: 310px;
+    }
+    .contenidoNews{
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: 600px 600px 650px 600px 600px 600px;
+        grid-template-areas: 
+        "not3"
+        "not1"
+        "not2"
+        "not4"
+        "not5"
+        "not6";
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Contenido Footer */
 
 footer{
@@ -711,22 +839,22 @@ footer {
     background-color: #1f1e1e;
 }
 footer div{
-    width: 320px;
+    width: auto;
     display: grid;
     margin: auto;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 100px 100px 100px;
     grid-template-rows: 50% 50%;
     color: white;
     grid-template-areas: 
         "company world service"
         "connect legal none";
-    align-items: left;
 }
 footer div div{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     margin-left: 30%;
+    margin-right: 10px;
 
 }
 footer div div ul{
@@ -742,5 +870,8 @@ footer div div h2{
     text-transform: uppercase;
 }
 }
+
+
+
 
 
