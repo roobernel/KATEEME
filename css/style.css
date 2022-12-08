@@ -1,4 +1,4 @@
-@import url(/css/font/stylesheet.css);
+@import url(font/stylesheet.css);
 *{
     margin: 0px;
     padding: 0px;
@@ -39,6 +39,12 @@ header{
     background-color: #f60;
     padding: 3px;
 }
+.contenido a{
+    color: white;
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
 @media screen and (min-width:1200px){ 
     .titulo{
         font-size: 50px;
@@ -68,16 +74,16 @@ header{
         margin-top: 4%;
         
     }
-    header nav div a{
-        text-decoration: none;
-        color: white;
-        font-size: medium;
-        text-transform: uppercase;   
-        display: inline;
-        margin: 10px;
-        color: white;
+    .contenido a{
+        font-size: 14px;  
+        padding: 3px;
+        margin: 8px;
+        border: 1px solid rgba(255, 102, 0, 0);
     }
-
+    .contenido a:hover{
+        color: rgb(0, 0, 0);
+        padding: 3px;
+    }
 }
 @media screen and (min-width:701px) and (max-width:1199px){
     header{
@@ -113,17 +119,16 @@ header{
         padding-bottom: 1%;
         
     }
-    header div nav div a{
-        display: inline;
-        margin: 10px;
-        color: white;
-        margin-top: 2%;
-    }  
-    header nav div a{
-        text-decoration: none;
-        color: white;
-        font-size: smaller;
-        text-transform: uppercase;  
+
+    .contenido a{
+        font-size: 12px;
+        margin: 7px;
+        padding: 3px;
+        border: 1px solid rgba(255, 102, 0, 0);
+    }
+    .contenido a:hover{
+        color: #000000;
+        padding: 3px;
     }
 }
 
@@ -139,6 +144,10 @@ header{
     }
     .titulo{
     font-size: 16px;
+    }
+    .tMod{
+        font-size: 14px;
+        margin-top: 5%;
     }
     h1{
         background-image: url(../img/logo.png);
@@ -175,9 +184,7 @@ header{
     right: 0px;
     }
     .contenido a{
-    color:white;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
     }
 
@@ -193,10 +200,7 @@ header{
 }
 
 
-.contenido a:hover {
-    color: black;
-    font-weight: bold;
-}
+
 
 /* Contenido Index */
 
@@ -873,5 +877,265 @@ footer div div h2{
 
 
 
+/* Contenido Powerwear */
+
+.contenidoPW{
+    display: grid;
+    margin: auto;
+}
+.titlePW{
+    grid-area: titlePW;
+    align-self: center;
+    justify-self: center;
+}
+.bannerPW1{
+    grid-area: bannerPW1;
+    background-image: url(../img/power/banner1.jpg);
+    background-size: cover;
+}
+.bannerPW2{
+    grid-area: bannerPW2;
+    background-image: url(../img/power/banner2.jpg);
+    background-size: cover;
+}
+.bannerPW3{
+    grid-area: bannerPW3;
+    background-image: url(../img/power/banner3.jpg);
+    background-size: cover;
+}
+.cardsPW{
+    grid-area: cardsPW;
+    display: grid;
+    background: #ffff;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
+.card5{
+    grid-area: card5;
+}
+.card6{
+    grid-area: card6;
+}
+.bannerPW1, .bannerPW2, .bannerPW3{
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+.cardsPW div{
+    width: 310px;
+    margin: auto;
+    align-self: center;
+    border: solid 1px #c5c4c4;
+    padding: 10px;
+}
+.cardsPW div img{
+    width: 310px;
+    height: 310px;
+}
+.btncard{
+    display: flex;
+    background-color: #f60;
+    color: #fff;
+    font-weight: 900;
+    padding:3px;
+    width: 80px;
+    text-decoration: none;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+}
+.btnPW{
+    display: flex;
+    background-color: #f60;
+    color: #fff;
+    font-weight: 900;
+    padding:3px;
+    width: 250px;
+    text-decoration: none;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
 
 
+
+}
+.bannerPW1 h4:hover, .bannerPW2 h4:hover{
+    color: rgba(255, 102, 0, 0);
+    -webkit-text-stroke: 1px #f60;
+}
+.btnPW:hover, .btncard:hover{
+    border: solid 3px #f60;
+    background: none;
+    color: #f60;
+}
+@media screen and (min-width:1200px){
+    .mainPW{
+        height: 2500px;
+    }
+    .contenidoPW{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 600px 600px ;
+    grid-template-rows: 500px 400px 1000px 500px;
+    grid-template-areas: 
+        "titlePW titlePW"
+        "bannerPW1 bannerPW2"
+        "cardsPW cardsPW"
+        "bannerPW3 bannerPW3"
+        ;
+    }
+    .titlePW{
+        width: 600px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .contenidoPW div h4{
+        text-transform: uppercase;
+        font-size: 40px;
+        width: 300px;
+        align-self: center;
+        padding-left: 10%;
+    }
+    .bannerPW3 h4, .bannerPW3 p{
+        padding-left: 0px;
+    }
+    .cardsPW{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 400px 400px 400px ;
+    grid-template-rows: 500px 500px ;
+    grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6"
+        ;
+    }
+
+}
+
+@media screen and (min-width:701px) and (max-width:1199px){
+    .mainPW{
+        height: 2550px;
+        margin-bottom: 5%;
+        margin-top: 0%;
+    }
+    .contenidoPW{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 350px 350px ;
+    grid-template-rows: 400px 350px 1500px 300px;
+    grid-template-areas: 
+        "titlePW titlePW"
+        "bannerPW1 bannerPW2"
+        "cardsPW cardsPW"
+        "bannerPW3 bannerPW3"
+        ;
+    }
+    .titlePW{
+        width: 350px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .contenidoPW div h4{
+        text-transform: uppercase;
+        font-size: 40px;
+        width: 300px;
+        align-self: center;
+        padding-left: 5%;
+    }
+    .bannerPW3 h4, .bannerPW3 p{
+        padding-left: 0px;
+    }
+    .cardsPW{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 450px 450px  450px;
+    grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        ;
+    }
+}
+
+@media screen and (max-width:700px){
+        .mainPW{
+        height: 3800px;
+        margin-bottom: 5%;
+        margin-top: 0%;
+    }
+    .contenidoPW{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 320px;
+    grid-template-rows: 300px 350px 350px 2450px 350px;
+    grid-template-areas: 
+        "titlePW"
+        "bannerPW1" 
+        "bannerPW2"
+        "cardsPW"
+        "bannerPW3";
+    }
+    .titlePW{
+        width: 310px;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .bannerPW2{
+        margin-top: 8px;
+    }
+
+    .contenidoPW div h4{
+        text-transform: uppercase;
+        font-size: 40px;
+        width: 320px;
+        align-self: center;
+        padding-left: 5%;
+    }
+        .bannerPW3{
+        flex-direction: column;
+        padding-top: 30%;
+    }
+    .bannerPW3 h4{
+        font-size: 18px;
+    }
+
+    .bannerPW3 h4, .bannerPW3 a{
+        padding-left: 0px;
+        width: 160px;
+        font-size: 14px;
+    }
+    .cardsPW div img{
+    width: 290px;
+    height: 290px;
+}
+.cardsPW div{
+    width: 300px;
+}
+    .cardsPW{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 320px;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    grid-template-areas: 
+        "card1" "card2"
+        "card3" "card4"
+        "card5" "card6"
+        ;
+    }
+}
