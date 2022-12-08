@@ -1126,6 +1126,7 @@ footer div div h2{
 }
 .cardsPW div{
     width: 300px;
+    margin-bottom: 3px;
 }
     .cardsPW{
     display: grid;
