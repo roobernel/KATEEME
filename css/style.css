@@ -726,157 +726,6 @@ font-size: 90px;
         margin: auto;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Contenido Footer */
-
-footer{
-    background-color:  #1f1e1e;
-    }
-.company{
-    grid-area: company;
-}
-.world{
-    grid-area: world;
-}
-.service{
-    grid-area: service;
-}
-.legal{
-    grid-area: legal;
-}
-.connect{
-    grid-area: connect;
-}
-footer div div{
-    display: inline-block;
-    
-}
-@media screen and (min-width:1200px){
-footer {
-    height: 100px ;
-    padding-bottom: 10%;   
-}
-footer div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 1000px ;
-    color: white;
-}
-footer div div{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-
-}
-footer div div ul{
-    list-style: none;
-    margin-top: 2%;
-
-}
-footer div div ul li{
-    font-size: small;
-}
-footer div div h2{
-    font-size: medium;
-    text-transform: uppercase;
-}
-}
-@media screen and (min-width:701px) and (max-width:1199px){
-footer {
-    height: auto ;
-    width: 100%;   
-    display: flex;
-    padding-bottom: 5%;
-}
-footer div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    margin: auto;
-    width: 700px ;
-    color: white;
-}
-
-footer div div{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-
-}
-footer div div ul{
-    list-style: none;
-    margin-left: 2%;
-
-}
-footer div div ul li{
-    font-size: 12px;
-}
-footer div div h2{
-    font-size: 15px;
-    text-transform: uppercase;
-}
-}
-@media screen and (max-width:700px){
-footer {  
-    height: 170px;
-    display: flex;
-    background-color: #1f1e1e;
-}
-footer div{
-    width: auto;
-    display: grid;
-    margin: auto;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 50% 50%;
-    color: white;
-    grid-template-areas: 
-        "company world service"
-        "connect legal none";
-}
-footer div div{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-left: 30%;
-    margin-right: 10px;
-
-}
-footer div div ul{
-    list-style: none;
-
-
-}
-footer div div ul li{
-    font-size: 10px;
-}
-footer div div h2{
-    font-size: 12px;
-    text-transform: uppercase;
-}
-}
-
-
-
 /* Contenido Powerwear */
 
 .contenidoPW{
@@ -947,7 +796,7 @@ footer div div h2{
     background-color: #f60;
     color: #fff;
     font-weight: 900;
-    padding:3px;
+    padding: 5px;
     width: 80px;
     text-decoration: none;
     margin: auto;
@@ -966,10 +815,8 @@ footer div div h2{
     text-decoration: none;
     margin: auto;
     justify-content: center;
-    padding: 10px;
+    padding: 14px;
     font-size: 30px;
-
-
 
 }
 .bannerPW1 h4:hover, .bannerPW2 h4:hover{
@@ -977,7 +824,7 @@ footer div div h2{
     -webkit-text-stroke: 1px #f60;
 }
 .btnPW:hover, .btncard:hover{
-    border: solid 3px #f60;
+    border: solid 1px #f60;
     background: none;
     color: #f60;
 }
@@ -1140,3 +987,153 @@ footer div div h2{
         ;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenido Footer */
+
+footer{
+    background-color:  #1f1e1e;
+    }
+.company{
+    grid-area: company;
+}
+.world{
+    grid-area: world;
+}
+.service{
+    grid-area: service;
+}
+.legal{
+    grid-area: legal;
+}
+.connect{
+    grid-area: connect;
+}
+footer div div{
+    display: inline-block;
+    
+}
+@media screen and (min-width:1200px){
+footer {
+    height: 100px ;
+    padding-bottom: 10%;   
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 1000px ;
+    color: white;
+}
+footer div div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+footer div div ul{
+    list-style: none;
+    margin-top: 2%;
+
+}
+footer div div ul li{
+    font-size: small;
+}
+footer div div h2{
+    font-size: medium;
+    text-transform: uppercase;
+}
+}
+@media screen and (min-width:701px) and (max-width:1199px){
+footer {
+    height: auto ;
+    width: 100%;   
+    display: flex;
+    padding-bottom: 5%;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 700px ;
+    color: white;
+}
+
+footer div div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+
+}
+footer div div ul{
+    list-style: none;
+    margin-left: 2%;
+
+}
+footer div div ul li{
+    font-size: 12px;
+}
+footer div div h2{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+}
+@media screen and (max-width:700px){
+footer {  
+    height: 170px;
+    display: flex;
+    background-color: #1f1e1e;
+}
+footer div{
+    width: auto;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50% 50%;
+    color: white;
+    grid-template-areas: 
+        "company world service"
+        "connect legal none";
+}
+footer div div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 10px;
+
+}
+footer div div ul{
+    list-style: none;
+
+
+}
+footer div div ul li{
+    font-size: 10px;
+}
+footer div div h2{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+}
+
+
+
